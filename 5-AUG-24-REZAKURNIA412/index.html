@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI By Reza </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="page input-page">
+        <h2>Masukkan Data Anda</h2>
+        <label for="weight">Berat Badan (KG):</label>
+        <input type="text" id="weight" placeholder="Contoh: 70">
+        
+        <label for="height">Tinggi Badan (CM):</label>
+        <input type="text" id="height" placeholder="Contoh: 170">
+        
+        <h3>Jenis Kelamin:</h3>
+        <label for="male">Pria</label>
+        <input type="radio" id="male" name="gender" value="Pria" checked>
+        <label for="female">Wanita</label>
+        <input type="radio" id="female" name="gender" value="Wanita">
+
+             <div style="margin-top: 20px;">
+                <button onclick="calculateBMI()">Hitung BMI</button>
+             </div>
+    </div>
+
+    <div class="page result-page">
+        <div id="result" class="result">BMI Anda: -</div>
+        <div id="advice" class="advice">Masukkan data Anda untuk melihat hasil dari Body Mass Index anda</div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
